@@ -8,19 +8,20 @@ const scene = new THREE.Scene();
 const clock = new THREE.Clock();
 
 // heartShape
-const x = 0, y = 0;
-const heartShape = new THREE.Shape();
+// const x = 0, y = 0;
+// const heartShape = new THREE.Shape();
 
-heartShape.moveTo(x + 0.25, y + 0.25);
-heartShape.bezierCurveTo(x + 0.25, y + 0.25, x + 0.2, y, x, y);
-heartShape.bezierCurveTo(x - 0.3, y, x - 0.3, y + 0.35, x - 0.3, y + 0.35);
-heartShape.bezierCurveTo(x - 0.3, y + 0.55, x - 0.1, y + 0.77, x + 0.25, y + 0.95);
-heartShape.bezierCurveTo(x + 0.6, y + 0.77, x + 0.8, y + 0.55, x + 0.8, y + 0.35);
-heartShape.bezierCurveTo(x + 0.8, y + 0.35, x + 0.8, y, x + 0.5, y);
-heartShape.bezierCurveTo(x + 0.35, y, x + 0.25, y + 0.25, x + 0.25, y + 0.25);
-// Geometry
-const geometry = new THREE.ShapeGeometry(heartShape);
+// heartShape.moveTo(x + 0.25, y + 0.25);
+// heartShape.bezierCurveTo(x + 0.25, y + 0.25, x + 0.2, y, x, y);
+// heartShape.bezierCurveTo(x - 0.3, y, x - 0.3, y + 0.35, x - 0.3, y + 0.35);
+// heartShape.bezierCurveTo(x - 0.3, y + 0.55, x - 0.1, y + 0.77, x + 0.25, y + 0.95);
+// heartShape.bezierCurveTo(x + 0.6, y + 0.77, x + 0.8, y + 0.55, x + 0.8, y + 0.35);
+// heartShape.bezierCurveTo(x + 0.8, y + 0.35, x + 0.8, y, x + 0.5, y);
+// heartShape.bezierCurveTo(x + 0.35, y, x + 0.25, y + 0.25, x + 0.25, y + 0.25);
+// // Geometry
+// const geometry = new THREE.ShapeGeometry(heartShape);
 
+const geometry = new THREE.BoxGeometry(1, 1, 1);
 
 // Material
 const material = new THREE.MeshBasicMaterial({
